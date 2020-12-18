@@ -7,7 +7,17 @@
       "Microsoft.Authorization/*/read",
       "Microsoft.Resources/deployments/*",
       "Microsoft.Resources/subscriptions/resourceGroups/read",
-      "Microsoft.Authorization/roleAssignments/read"
+      "Microsoft.Authorization/roleAssignments/read",
+      "Microsoft.Compute/disks/*",
+      "Microsoft.Compute/virtualMachines/write",
+      "Microsoft.Compute/virtualMachines/extensions/write",      
+      "Microsoft.Network/publicIPAddresses/*",
+      "Microsoft.Network/virtualNetworks/*",
+      "Microsoft.Network/virtualNetworks/subnets/write",
+      "Microsoft.Network/networkSecurityGroups/*",
+      "Microsoft.Network/networkInterfaces/write",
+      "Microsoft.Storage/storageAccounts/write",
+      "Microsoft.Storage/*"
     ],
     "NotActions":  [
   ]
