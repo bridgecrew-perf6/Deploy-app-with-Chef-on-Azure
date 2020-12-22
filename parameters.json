@@ -3,13 +3,19 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
         "adminUsername": {
-            "value": "demouser"
+            "value": "demouser-chef"
         },
-    "adminPassword": {
-      "value": "Password@123"
+        "adminPassword": {
+            "value": "Password@123"
+        },
+        "adminUsername2": {
+            "value": "demouser-mrp"
+        },
+        "adminPassword2": {
+            "value": "Password@123"
+        },        
+        "deploymentId": {
+            "value": "GET-DEPLOYMENT-ID"
+        }    
     }
-    "deploymentId": {
-      "value": "GET-DEPLOYMENT-ID"
-    }    
-  }
 }
