@@ -16,13 +16,6 @@
                 "description": "Password for the Virtual Machine."
             }
         },
-        "automateLicenseUri": {
-            "defaultValue": "",
-            "type": "string",
-            "metadata": {
-                "description": "Chef Automate license file Uri"
-            }
-        },
         "deploymentId": {
             "value": "GET-DEPLOYMENT-ID",
             "type": "string"
