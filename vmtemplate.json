@@ -406,17 +406,17 @@
   "outputs": {
       "chefAutomateURL": {
           "type": "String",
-          "value": "[concat('https://', reference(variables('publicIPAddressName')).dnsSettings.fqdn, '/biscotti/setup')]"
+          "value": "[concat('https://', reference(variables('publicIPAddressName')).dnsSettings.fqdn)]"
       },
-      "chefvmdnsname": {
+      "chefautomatevmdnsname": {
         "type": "String",
         "value": "[reference(resourceId('Microsoft.Network/publicIPAddresses',variables('publicIPAddressName'))).dnsSettings.fqdn]"
       },      
-      "chefvmUsername": {
+      "chefautomatevmUsername": {
           "type": "String",
           "value": "[parameters('adminUsername')]"
       },
-      "chefvmPassword": {
+      "chefautomatevmPassword": {
           "type": "String",
           "value": "[parameters('adminPassword')]"
       },
