@@ -404,18 +404,14 @@
       }
   ],
   "outputs": {
-      "fqdn": {
-          "type": "String",
-          "value": "[reference(resourceId('Microsoft.Network/publicIPAddresses',variables('publicIPAddressName'))).dnsSettings.fqdn]"
-      },
       "chefAutomateURL": {
           "type": "String",
           "value": "[concat('https://', reference(variables('publicIPAddressName')).dnsSettings.fqdn, '/biscotti/setup')]"
       },
-      "hostname": {
-          "type": "string",
-          "value": "[reference(variables('publicIPAddressName2')).dnsSettings.fqdn]"
-      },
+      "chefvmdnsname": {
+        "type": "String",
+        "value": "[reference(resourceId('Microsoft.Network/publicIPAddresses',variables('publicIPAddressName'))).dnsSettings.fqdn]"
+      },      
       "chefvmUsername": {
           "type": "String",
           "value": "[parameters('adminUsername')]"
@@ -424,6 +420,10 @@
           "type": "String",
           "value": "[parameters('adminPassword')]"
       },
+      "mrpvmdnsname": {
+        "type": "string",
+        "value": "[reference(variables('publicIPAddressName2')).dnsSettings.fqdn]"
+      },      
       "mrpvmUsername": {
           "type": "String",
           "value": "[parameters('adminUsername2')]"
