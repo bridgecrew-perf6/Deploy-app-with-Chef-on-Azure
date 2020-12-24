@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
         "adminUsername": {
-            "value": "demouser-chef"
+            "value": "azureuser"
         },
         "adminPassword": {
-            "value": "Password@123"
+            "value": "Passw0rd0134"
         },
         "adminUsername2": {
             "value": "demouser-mrp"
